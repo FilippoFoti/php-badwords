@@ -20,8 +20,16 @@
 </head>
 
 <body>
+    <!-- HEADER -->
+    <header>
+        <img src="img/logo.svg" alt="Logo">
+    </header>
+    <!-- /HEADER -->
+
+    <!-- MAIN -->
     <main>
-        <div class="container">
+        <div class="result">
+            <h1>Censura i tuoi testi con <span>PHP Badwords</span>!</h1>
             <h2>Il tuo paragrafo</h2>
             <p>
                 <?php
@@ -29,11 +37,10 @@
                 ?>
                 <h3>
                     <?php
-                    echo "Il paragrafo ha: " . strlen($text) . " caratteri";
+                    echo "Il tuo paragrafo ha: " . strlen($text) . " caratteri.";
                     ?>
                 </h3>
             </p>
-
             <h2>Paragrafo censurato</h2>
             <p>
                 <?php
@@ -41,12 +48,20 @@
                 ?>
                 <h3>
                     <?php
-                    echo "Il paragrafo censurato ha: " . strlen($text_censored) . " caratteri";
+                    echo "Il paragrafo censurato ha: " . strlen($text_censored) . " caratteri.";
                     ?>
                 </h3>
             </p>
+            <button><a href="index.php">Indietro</a></button>
         </div>
     </main>
+    <!-- /MAIN -->
+
+    <!-- FOOTER -->
+    <footer>
+        <h2>PHP Badwords by <span>Boolean</span> ©</h2>
+    </footer>
+    <!-- /FOOTER -->
 </body>
 
 </html>
